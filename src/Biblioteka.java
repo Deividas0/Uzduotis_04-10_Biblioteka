@@ -1,3 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Biblioteka {
-    String[] biblioteka = new String[4];
+    private List<Knyga> biblioteka = new ArrayList<>();
+
+    public void idetiYBiblioteka(Knyga knyga) {
+        biblioteka.add(knyga);
+    }
+
+    public List<Knyga> getBiblioteka() {
+        return biblioteka;
+    }
 }
